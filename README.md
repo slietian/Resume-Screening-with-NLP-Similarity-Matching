@@ -1,68 +1,67 @@
-# 🤖 Resume Screening AI Bot
+# 🤖 Resume Screening & Skill Matching Tool
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-![Python](https://img.shields.io/badge/python-3.8%2B-blue)
-![Streamlit](https://img.shields.io/badge/Built%20With-Streamlit-ff4b4b)
 
-An intelligent AI-powered Resume Screening App built with **Streamlit**. It automatically extracts key information like **email**, **phone number**, and **location**, and matches resumes against a **Job Description (JD)**. You can also **download the results in Excel format**.
-
----
-
-## 📸 Demo Screenshots
-
-| Home Page | Prediction Page |
-|-----------|-----------------|
-| ![Home Page](images/1.png) | ![Prediction Page](images/2.png) |
-
-| Uploaded Resume | Excel Download |
-|------------------|----------------|
-| ![Uploaded File](images/3.png) | ![Excel Output](images/4.png) |
+An automated **Resume Screening application** built using **Python and Streamlit**.  
+This project helps in shortlisting resumes by extracting important candidate details and matching them against a given **Job Description (JD)**.  
+The results can be viewed in a tabular format and exported as an **Excel file**.
 
 ---
 
 ## 🚀 Features
 
-- Upload multiple PDF resumes 📂
-- Paste job description (JD) text 📄
-- Extract:
-  - Name
-  - Email
+- Upload multiple PDF resumes
+- Paste job description text
+- Automatically extract:
+  - Email ID
   - Phone Number
   - Location
-  - Match Score 🔍
-- View results in a table 📊
-- Download as `.xlsx` Excel file 📥
-- One-click refresh 🔄
+- Calculate resume–JD match score
+- Display results in an interactive table
+- Export results as `.xlsx` file
+- Simple and user-friendly interface
 
 ---
 
-## 🧠 Tech Stack
+## 🧠 How It Works
 
-- **Frontend**: Streamlit
-- **Backend**: Python
-- **PDF Parsing**: PyMuPDF (`fitz`)
-- **Excel Handling**: Pandas, Openpyxl
+1. Resume PDFs are uploaded through the interface  
+2. Text is extracted using PDF parsing  
+3. Job description text is analyzed  
+4. Resume content is compared with JD using similarity logic  
+5. A match percentage is generated for each resume  
+6. Results are displayed and can be downloaded as Excel  
 
----
-
-## 🛠️ Libraries Used
-
-| Library | Purpose |
-|--------|---------|
-| `streamlit` | Web interface |
-| `pandas` | Data handling and Excel export |
-| `fitz` (PyMuPDF) | Extract text from PDFs |
-| `re` | Extract emails, phone numbers, locations |
-| `difflib` | Compute match scores |
-| `base64` | Download button for Excel |
-| `io` | In-memory file handling |
-| `openpyxl` | Save Excel file properly |
+This simulates the **initial HR screening process** used in real recruitment workflows.
 
 ---
 
-## 🧪 How to Run Locally
+## 🛠 Tech Stack
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/DevWaqarAhmad/Resume-Screening-Bot.git
-   cd Resume-Screening-Bot
+- **Frontend**: Streamlit  
+- **Backend**: Python  
+- **Resume Parsing**: PyMuPDF (fitz)  
+- **Data Handling**: Pandas  
+- **Similarity Matching**: difflib  
+- **Excel Export**: OpenPyXL  
+
+---
+
+## 📦 Libraries Used
+
+- `streamlit`
+- `pandas`
+- `fitz` (PyMuPDF)
+- `re`
+- `difflib`
+- `openpyxl`
+- `io`
+- `base64`
+
+---
+
+## ▶️ Run the Project Locally
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/<your-username>/resume-skill-matcher.git
+cd resume-skill-matcher

@@ -63,5 +63,5 @@ This simulates the **initial HR screening process** used in real recruitment wor
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/resume-skill-matcher.git
+git clone https://github.com/slietian/Resume-Screening-with-NLP-Similarity-Matching
 cd resume-skill-matcher
